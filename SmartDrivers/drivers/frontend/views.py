@@ -9,12 +9,14 @@ from django.core.files.base import ContentFile
 from django.shortcuts import render, HttpResponse, redirect
 import csv
 from .models import *
+from django.http import HttpResponse
+from django.shortcuts import render
 # from .serializer import*
 # Create your views here.
 
 # Generate CSV File lab_elmts List
 
 
-def home(request):
-    return render(request, 'base.html')
+def index(request):
+    return render(request, 'index.html')
 

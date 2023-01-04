@@ -1,11 +1,11 @@
-from django.urls import path, include
+from django.urls import path,include
 
-from .views import *
-from backend.views import *
+from frontend import views
+from frontend.views import index
 from rest_framework.routers import DefaultRouter
 
 
 urlpatterns = [
-    path('', home, name="home"),
 
+    path('', views.index),
 ]
